@@ -1,0 +1,29 @@
+<!-- partials/header.html -->
+<header class="site-header">
+  <div class="inner header-top row-compact">
+    <a href="index.html" class="logo" aria-label="ENS Sports Hub 홈">ENS<span>Sports</span></a>
+
+    <form class="site-search" id="siteSearchForm" action="search.html" method="get" role="search" aria-label="사이트 검색">
+      <input type="search" name="q" id="siteSearchInput" placeholder="검색 (선수, 뉴스, 팀, 상품…)" autocomplete="off" />
+      <button type="submit" class="button primary">검색</button>
+    </form>
+
+    <div class="auth-controls">
+      <a href="login.html" class="button tertiary" id="loginButton">로그인</a>
+      <div class="user-chip" id="userChip" hidden><span id="userName"></span></div>
+      <a href="cart.html" class="button secondary" id="cartButton" hidden>장바구니</a>
+      <button type="button" class="button tertiary" id="logoutButton" hidden>로그아웃</button>
+    </div>
+  </div>
+
+  <div class="inner header-nav">
+    <nav class="site-nav" aria-label="주요 탐색">
+      <a href="esports.html">리그 오브 레전드</a>
+      <a href="basketball.html">NBA</a>
+      <a href="football.html">EPL</a>
+      <a href="news.html">뉴스</a>
+      <a href="matches.html">경기 결과</a>
+      <a href="store.html">스토어</a>
+    </nav>
+  </div>
+</header>

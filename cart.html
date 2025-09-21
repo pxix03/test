@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>장바구니 - ENS Sports Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <!-- 헤더 마운트 포인트 -->
+<div id="app-header"></div>
+<!-- 헤더 로더 -->
+<script src="auth.js" defer></script>
+<script src="header.js" defer></script>
+<script src="cart.js" defer></script>
+<script src="cards-link.js" defer></script>
+
+  <main class="cart-page">
+    <div class="cart-page inner cart-grid">
+      <div>
+        <div id="emptyState" class="empty" hidden>장바구니가 비어 있습니다.</div>
+        <div id="cartList"></div>
+      </div>
+      <aside class="cart-summary">
+        <h3>주문 요약</h3>
+        <div class="summary-row"><span>상품 금액</span><strong id="subPrice">₩0</strong></div>
+        <div class="summary-row"><span>총 수량</span><strong id="itemCount">0</strong></div>
+        <div class="summary-row summary-total"><span>결제 금액</span><strong id="totalPrice">₩0</strong></div>
+        <button id="checkoutBtn" class="button primary" type="button" disabled>결제하기</button>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner"><p>© 2025 ENS Sports Network. 모든 권리 보유.</p></div>
+  </footer>
+
+</body>
+</html>

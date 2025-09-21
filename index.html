@@ -1,0 +1,460 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>ENS Sports Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 헤더 마운트 포인트 -->
+  <div id="app-header"></div>
+  <!-- 헤더 로더 -->
+  <script src="auth.js" defer></script>
+  <script src="header.js" defer></script>
+  <script src="cards-link.js?v=4" defer></script>
+  <script src="row-scroll.js?v=9" defer></script>
+  <!-- main -->
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="inner">
+        <div class="hero-text">
+          <h1 id="hero-title">ENS</h1>
+          <p>ENS는 e스포츠부터 NBA, EPL까지 스타 선수 정보와 최신 뉴스, 경기 결과, 라이선스 굿즈 쇼핑을 한곳에서 제공합니다.</p>
+          <div class="hero-actions">
+            <a href="matches.html" class="button primary">오늘의 매치 체크</a>
+            <a href="store.html" class="button secondary">스토어 둘러보기</a>
+          </div>
+        </div>
+        <div class="hero-media" role="presentation" aria-hidden="true">
+          <div class="hero-circle"></div>
+          <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80" alt="경기장 응원으로 가득 찬 스포츠 팬" />
+        </div>
+      </div>
+    </section>
+
+    <!-- LoL -->
+    <section id="esports" class="sport-section" aria-labelledby="esports-title">
+      <div class="inner">
+        <div class="section-head">
+          <h2 id="esports-title">리그 오브 레전드 스타</h2>
+          <p>ENS가 엄선한 LCK·국제 무대의 레전드. 멘탈과 팀 리딩, 하이라이트 플레이로 전 세계 팬을 사로잡고 있습니다.</p>
+        </div>
+        <div class="row-shell">
+        <button class="row-nav2 prev" aria-label="이전" hidden>‹</button>
+        <div class="card-grid row-scroll">
+          <article class="player-card">
+            <img src="https://live.staticflickr.com/65535/52463757476_6affa467aa_b.jpg" alt="Faker" />
+            <div class="card-body">
+              <h3>이상혁 (Faker)</h3>
+              <p class="position">MID | T1</p>
+              <p>월즈 4회 우승, MSI 2회, 2023 롤드컵 MVP. 여전히 메타를 선도하는 살아있는 전설.</p>
+              <ul class="stat-list">
+                <li><span>주요 수상</span><span>국제 대회 MVP 5회</span></li>
+                <li><span>솔로랭크</span><span>KR 챌린저 상위권, 승률 64%</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="player-card">
+            <img src="https://live.staticflickr.com/65535/52463757476_6affa467aa_b.jpg" alt="Chovy" />
+            <div class="card-body">
+              <h3>정지훈 (Chovy)</h3>
+              <p class="position">MID | Gen.G</p>
+              <p>라인전 지배력과 섬세한 운영이 강점. 2024 LCK 스프링 파이널 MVP로 에이스 입지를 굳혔습니다.</p>
+              <ul class="stat-list">
+                <li><span>라인전 지표</span><span>골드 격차 +604 (15분)</span></li>
+                <li><span>챔피언 풀</span><span>아리, 아지르, 요네</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="player-card">
+            <img src="https://live.staticflickr.com/65535/52463757476_6affa467aa_b.jpg" alt="Ruler" />
+            <div class="card-body">
+              <h3>박재혁 (Ruler)</h3>
+              <p class="position">ADC | JDG</p>
+              <p>정교한 팀파이트와 원딜 캐리 능력으로 LPL을 흔드는 슈퍼스타. 2023 MSI 우승 주역.</p>
+              <ul class="stat-list">
+                <li><span>DPM</span><span>683 (리그 1위)</span></li>
+                <li><span>KDA</span><span>5.9</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="player-card">
+            <img src="https://live.staticflickr.com/65535/52463757476_6affa467aa_b.jpg" alt="Ruler" />
+            <div class="card-body">
+              <h3>박재혁 (Ruler)</h3>
+              <p class="position">ADC | JDG</p>
+              <p>정교한 팀파이트와 원딜 캐리 능력으로 LPL을 흔드는 슈퍼스타. 2023 MSI 우승 주역.</p>
+              <ul class="stat-list">
+                <li><span>DPM</span><span>683 (리그 1위)</span></li>
+                <li><span>KDA</span><span>5.9</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="player-card">
+            <img src="https://live.staticflickr.com/65535/52463757476_6affa467aa_b.jpg" alt="Ruler" />
+            <div class="card-body">
+              <h3>박재혁 (Ruler)</h3>
+              <p class="position">ADC | JDG</p>
+              <p>정교한 팀파이트와 원딜 캐리 능력으로 LPL을 흔드는 슈퍼스타. 2023 MSI 우승 주역.</p>
+              <ul class="stat-list">
+                <li><span>DPM</span><span>683 (리그 1위)</span></li>
+                <li><span>KDA</span><span>5.9</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <button class="row-nav2 next" aria-label="다음">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- NBA -->
+    <section id="basketball" class="sport-section" aria-labelledby="basketball-title">
+      <div class="inner">
+        <div class="section-head">
+          <h2 id="basketball-title">NBA 아이콘</h2>
+          <p>하이라이트 트렌드를 이끄는 슈퍼스타와 차세대 유망주. ENS 데이터로 확인하세요.</p>
+        </div>
+        <div class="row-shell">
+        <button class="row-nav2 prev" aria-label="이전" hidden>‹</button>
+        <div class="card-grid row-scroll">
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1504455580772-0947d74b9c17?auto=format&fit=crop&w=600&q=80" alt="Stephen Curry" />
+            <div class="card-body">
+              <h3>Stephen Curry</h3>
+              <p class="position">PG | Golden State Warriors</p>
+              <p>리그 최고의 3점 슈터. 4회 우승, 2회 정규 시즌 MVP, 1회 파이널 MVP로 슈퍼스타 위엄을 과시합니다.</p>
+              <ul class="stat-list">
+                <li><span>커리어 3점</span><span>3,747개</span></li>
+                <li><span>23-24 평균</span><span>26.4점 / 5.1어시스트</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=600&q=80" alt="Nikola Jokic" />
+            <div class="card-body">
+              <h3>Nikola Jokić</h3>
+              <p class="position">C | Denver Nuggets</p>
+              <p>빅맨 플레이메이커의 정석. 3회 MVP와 2023 파이널 MVP, 올라운더 스탯으로 팀을 이끕니다.</p>
+              <ul class="stat-list">
+                <li><span>23-24 평균</span><span>26.7점 / 12.3리바운드</span></li>
+                <li><span>트리플더블</span><span>커리어 130회</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80" alt="Anthony Edwards" />
+            <div class="card-body">
+              <h3>Anthony Edwards</h3>
+              <p class="position">SG | Minnesota Timberwolves</p>
+              <p>엄청난 폭발력을 자랑하는 차세대 슈팅가드. 2024 플레이오프에서 평균 28.1점을 기록했습니다.</p>
+              <ul class="stat-list">
+                <li><span>커리어 하이</span><span>53점</span></li>
+                <li><span>하이라이트</span><span>연이은 포스터 덩크</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80" alt="Anthony Edwards" />
+            <div class="card-body">
+              <h3>Anthony Edwards</h3>
+              <p class="position">SG | Minnesota Timberwolves</p>
+              <p>엄청난 폭발력을 자랑하는 차세대 슈팅가드. 2024 플레이오프에서 평균 28.1점을 기록했습니다.</p>
+              <ul class="stat-list">
+                <li><span>커리어 하이</span><span>53점</span></li>
+                <li><span>하이라이트</span><span>연이은 포스터 덩크</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80" alt="Anthony Edwards" />
+            <div class="card-body">
+              <h3>Anthony Edwards</h3>
+              <p class="position">SG | Minnesota Timberwolves</p>
+              <p>엄청난 폭발력을 자랑하는 차세대 슈팅가드. 2024 플레이오프에서 평균 28.1점을 기록했습니다.</p>
+              <ul class="stat-list">
+                <li><span>커리어 하이</span><span>53점</span></li>
+                <li><span>하이라이트</span><span>연이은 포스터 덩크</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <button class="row-nav2 next" aria-label="다음">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- EPL -->
+    <section id="football" class="sport-section" aria-labelledby="football-title">
+      <div class="inner">
+        <div class="section-head">
+          <h2 id="football-title">EPL 히어로</h2>
+          <p>프리미어리그 득점왕 경쟁부터 진화한 전술 이해도까지, ENS 데이터랩이 추적한 핵심 선수들.</p>
+        </div>
+        <div class="row-shell">
+        <button class="row-nav2 prev" aria-label="이전" hidden>‹</button>
+        <div class="card-grid row-scroll">
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=600&q=80" alt="Erling Haaland" />
+            <div class="card-body">
+              <h3>Erling Haaland</h3>
+              <p class="position">ST | Manchester City</p>
+              <p>압도적인 득점 감각. 데뷔 시즌 득점왕과 챔피언스리그 우승으로 시대를 상징하는 골게터가 되었습니다.</p>
+              <ul class="stat-list">
+                <li><span>23-24 리그</span><span>27골 / 5도움</span></li>
+                <li><span>xG</span><span>0.91 per 90</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Son Heung-min" />
+            <div class="card-body">
+              <h3>손흥민</h3>
+              <p class="position">LW | Tottenham Hotspur</p>
+              <p>프리미어리그 100호 골 달성, 2020 Puskás Award 수상. 아시아 최고의 리더이자 골 메이커.</p>
+              <ul class="stat-list">
+                <li><span>23-24 리그</span><span>17골 / 10도움</span></li>
+                <li><span>스프린트</span><span>시속 35.1km</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80" alt="Bukayo Saka" />
+            <div class="card-body">
+              <h3>Bukayo Saka</h3>
+              <p class="position">RW | Arsenal</p>
+              <p>드리블과 침투, 세트피스까지 모두 가능한 멀티 공격수. 2024 PFA 올해의 팀 선정.</p>
+              <ul class="stat-list">
+                <li><span>23-24 리그</span><span>16골 / 9도움</span></li>
+                <li><span>크리에이티브</span><span>xA 0.34 per 90</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80" alt="Bukayo Saka" />
+            <div class="card-body">
+              <h3>Bukayo Saka</h3>
+              <p class="position">RW | Arsenal</p>
+              <p>드리블과 침투, 세트피스까지 모두 가능한 멀티 공격수. 2024 PFA 올해의 팀 선정.</p>
+              <ul class="stat-list">
+                <li><span>23-24 리그</span><span>16골 / 9도움</span></li>
+                <li><span>크리에이티브</span><span>xA 0.34 per 90</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80" alt="Bukayo Saka" />
+            <div class="card-body">
+              <h3>Bukayo Saka</h3>
+              <p class="position">RW | Arsenal</p>
+              <p>드리블과 침투, 세트피스까지 모두 가능한 멀티 공격수. 2024 PFA 올해의 팀 선정.</p>
+              <ul class="stat-list">
+                <li><span>23-24 리그</span><span>16골 / 9도움</span></li>
+                <li><span>크리에이티브</span><span>xA 0.34 per 90</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <button class="row-nav2 next" aria-label="다음">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="news" aria-labelledby="news-title">
+      <div class="inner">
+        <div class="section-head">
+          <h2 id="news-title">ENS 실시간 뉴스픽</h2>
+          <p>국내외 주요 매체와 제휴하여 받은 헤드라인을 요약 제공합니다. 더보기 버튼으로 원문을 확인하세요.</p>
+        </div>
+        <div class="row-shell">
+        <button class="row-nav2 prev" aria-label="이전" hidden>‹</button>
+        <div class="news-grid row-scroll">
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=640&q=80" alt="리그 오브 레전드 경기" />
+            <div class="news-body">
+              <h3>월즈 2025, 서울-도쿄 공동 개최 확정</h3>
+              <p>LCK와 LJL이 공동 주최하는 2025 롤드컵 장소가 확정됐습니다. 개막식은 서울 고척돔에서 진행됩니다.</p>
+              <a class="button text" href="https://www.leagueoflegends.com" target="_blank" rel="noopener">원문 열기</a>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1579273167091-ec2a993159f5?auto=format&fit=crop&w=640&q=80" alt="NBA 경기" />
+            <div class="news-body">
+              <h3>Nuggets, 백투백 우승 도전 선언</h3>
+              <p>덴버 구단은 미디어 데이에서 선수단 전원이 우승 준비를 마쳤다고 밝혔습니다. 요키치는 컨디션이 최고라고 전했습니다.</p>
+              <a class="button text" href="https://www.nba.com" target="_blank" rel="noopener">원문 열기</a>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=640&q=80" alt="축구 경기" />
+            <div class="news-body">
+              <h3>아스널, 북런던 더비 승리로 선두 유지</h3>
+              <p>사카-외데고르-제수스 라인이 합작한 두 골로 아스널이 토트넘을 2-1로 누르고 1위를 지켰습니다.</p>
+              <a class="button text" href="https://www.premierleague.com" target="_blank" rel="noopener">원문 열기</a>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=640&q=80" alt="축구 경기" />
+            <div class="news-body">
+              <h3>아스널, 북런던 더비 승리로 선두 유지</h3>
+              <p>사카-외데고르-제수스 라인이 합작한 두 골로 아스널이 토트넘을 2-1로 누르고 1위를 지켰습니다.</p>
+              <a class="button text" href="https://www.premierleague.com" target="_blank" rel="noopener">원문 열기</a>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=640&q=80" alt="축구 경기" />
+            <div class="news-body">
+              <h3>아스널, 북런던 더비 승리로 선두 유지</h3>
+              <p>사카-외데고르-제수스 라인이 합작한 두 골로 아스널이 토트넘을 2-1로 누르고 1위를 지켰습니다.</p>
+              <a class="button text" href="https://www.premierleague.com" target="_blank" rel="noopener">원문 열기</a>
+            </div>
+          </article>
+        </div>
+        <button class="row-nav2 next" aria-label="다음">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Matches -->
+    <section id="matches" class="matches" aria-labelledby="matches-title">
+      <div class="inner">
+        <div class="section-head">
+          <h2 id="matches-title">오늘의 경기 결과 & 하이라이트</h2>
+          <p>ENS 매치 센터는 공식 기록과 직접 제휴해 실시간으로 업데이트됩니다. 하이라이트 영상은 경기 종료 후 30분 내 업로드!</p>
+        </div>
+        <div class="scoreboard row-scroll">
+          <article class="score-card" aria-label="리그 오브 레전드 경기 결과">
+            <div class="score-meta">
+              <span class="tag">LoL</span>
+              <span>월즈 그룹 스테이지</span>
+              <time datetime="2025-09-20">9월 20일</time>
+            </div>
+            <div class="score-teams">
+              <div class="team"><span class="team-name">T1</span><span class="team-score">2</span></div>
+              <div class="team"><span class="team-name">G2 Esports</span><span class="team-score muted">1</span></div>
+            </div>
+            <a class="button ghost" href="#" aria-disabled="true">하이라이트 준비 중</a>
+          </article>
+          <article class="score-card" aria-label="NBA 경기 결과">
+            <div class="score-meta">
+              <span class="tag">NBA</span>
+              <span>정규 시즌</span>
+              <time datetime="2025-09-19">9월 19일</time>
+            </div>
+            <div class="score-teams">
+              <div class="team"><span class="team-name">Warriors</span><span class="team-score">118</span></div>
+              <div class="team"><span class="team-name">Lakers</span><span class="team-score muted">110</span></div>
+            </div>
+            <a class="button ghost" href="https://youtu.be" target="_blank" rel="noopener">하이라이트 보기</a>
+          </article>
+          <article class="score-card" aria-label="프리미어리그 경기 결과">
+            <div class="score-meta">
+              <span class="tag">EPL</span>
+              <span>Matchweek 7</span>
+              <time datetime="2025-09-19">9월 19일</time>
+            </div>
+            <div class="score-teams">
+              <div class="team"><span class="team-name">Arsenal</span><span class="team-score">3</span></div>
+              <div class="team"><span class="team-name">Tottenham</span><span class="team-score muted">2</span></div>
+            </div>
+            <a class="button ghost" href="https://youtu.be" target="_blank" rel="noopener">하이라이트 보기</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Store (상품은 항상 보이도록) -->
+    <section id="store" class="store" aria-labelledby="store-title">
+      <div class="inner" id="storeWrapper">
+        <div class="section-head">
+          <h2 id="store-title">ENS 스토어</h2>
+          <p>둘러보기는 자유! 로그인하면 장바구니 담기가 가능합니다.</p>
+        </div>
+
+        <div class="store-locked" id="storeLocked" hidden role="status">
+          <p>장바구니 담기는 ENS 계정으로 로그인 후 이용할 수 있습니다.</p>
+          <a href="login.html" class="button primary">로그인하고 이용하기</a>
+        </div>
+        <div class="row-shell">
+        <button class="row-nav2 prev" aria-label="이전" hidden>‹</button>
+        <div class="store-grid row-scroll" id="storeGrid">
+          <article class="store-card">
+            <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80" alt="T1 한정판 유니폼" />
+            <div class="store-body">
+              <h3>T1 월즈 챔피언 한정판 유니폼</h3>
+              <p>2025 월즈 기념 에디션. 주문 제작 배번 각인 가능.</p>
+              <span class="price">₩189,000</span>
+              <button type="button" class="button secondary">장바구니 추가</button>
+            </div>
+          </article>
+          <article class="store-card">
+            <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=640&q=80" alt="NBA 시티 에디션 볼" />
+            <div class="store-body">
+              <h3>NBA 시티 에디션 스킬볼</h3>
+              <p>정규 규격, 야외 전용 하이브리드 소재. 5개 도시 선택 가능.</p>
+              <span class="price">₩79,000</span>
+              <button type="button" class="button secondary">장바구니 추가</button>
+            </div>
+          </article>
+          <article class="store-card">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=640&q=80" alt="프리미어리그 머플러" />
+            <div class="store-body">
+              <h3>EPL 빅6 머플러 컬렉션</h3>
+              <p>양면 직조, 정품 라이선스 패치 부착. 팀별 색상 선택.</p>
+              <span class="price">₩49,000</span>
+              <button type="button" class="button secondary">장바구니 추가</button>
+            </div>
+          </article>
+          <article class="store-card">
+            <img src="https://images.unsplash.com/photo-1586482219171-0f3ac11c0961?auto=format&fit=crop&w=640&q=80" alt="게이밍 기어" />
+            <div class="store-body">
+              <h3>ENS X Logitech 게이밍 번들</h3>
+              <p>전용 테마 스킨이 적용된 마우스·키보드·헤드셋 패키지.</p>
+              <span class="price">₩259,000</span>
+              <button type="button" class="button secondary">장바구니 추가</button>
+            </div>
+          </article>
+          <article class="store-card">
+            <img src="https://images.unsplash.com/photo-1586482219171-0f3ac11c0961?auto=format&fit=crop&w=640&q=80" alt="게이밍 기어" />
+            <div class="store-body">
+              <h3>ENS X Logitech 게이밍 번들</h3>
+              <p>전용 테마 스킨이 적용된 마우스·키보드·헤드셋 패키지.</p>
+              <span class="price">₩259,000</span>
+              <button type="button" class="button secondary">장바구니 추가</button>
+            </div>
+          </article>
+          <article class="store-card">
+            <img src="https://images.unsplash.com/photo-1586482219171-0f3ac11c0961?auto=format&fit=crop&w=640&q=80" alt="게이밍 기어" />
+            <div class="store-body">
+              <h3>ENS X Logitech 게이밍 번들</h3>
+              <p>전용 테마 스킨이 적용된 마우스·키보드·헤드셋 패키지.</p>
+              <span class="price">₩259,000</span>
+              <button type="button" class="button secondary">장바구니 추가</button>
+            </div>
+          </article>
+        </div>
+        <button class="row-nav2 next" aria-label="다음">›</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="inner">
+      <p>© 2025 ENS Network. 모든 권리 보유.</p>
+      <div class="footer-links" aria-label="바로가기">
+        <a href="index.html#hero">홈</a>
+        <a href="news.html">뉴스</a>
+        <a href="matches.html">경기 결과</a>
+        <a href="store.html">스토어</a>
+      </div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>

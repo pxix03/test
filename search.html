@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>검색 - ENS Sports Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 헤더 마운트 포인트 -->
+  <div id="app-header"></div>
+  <!-- 헤더 로더 -->
+  <script src="auth.js" defer></script>
+  <script src="header.js" defer></script>
+  <script src="cards-link.js" defer></script>
+
+  <main class="search-page">
+    <div class="inner">
+      <div class="search-head">
+        <h1>검색 결과</h1>
+        <div class="search-meta" id="searchMeta">검색어: <strong id="kw"></strong></div>
+      </div>
+
+      <!-- 필터(선택) -->
+      <div class="filters" style="margin-bottom:16px; display:flex; gap:10px; flex-wrap:wrap;">
+        <button class="button ghost" data-filter="all">전체</button>
+        <button class="button ghost" data-filter="lol">LoL</button>
+        <button class="button ghost" data-filter="nba">NBA</button>
+        <button class="button ghost" data-filter="epl">EPL</button>
+        <button class="button ghost" data-filter="news">뉴스</button>
+        <button class="button ghost" data-filter="match">경기</button>
+        <button class="button ghost" data-filter="store">스토어</button>
+      </div>
+
+      <div id="resultCount" class="search-meta" style="margin-bottom:10px;"></div>
+      <section id="results" class="result-grid" aria-live="polite"></section>
+      <div class="pager" id="pager" hidden>
+        <button class="button tertiary" id="prevPage">이전</button>
+        <button class="button tertiary" id="nextPage">다음</button>
+      </div>
+
+      <div id="empty" class="search-empty" hidden>
+        <p>검색 결과가 없습니다. 다른 키워드를 입력해 보세요.<br/>예) <em>Faker</em>, <em>손흥민</em>, <em>Arsenal</em>, <em>유니폼</em></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p>© 2025 ENS Sports Network. 모든 권리 보유.</p>
+    </div>
+  </footer>
+
+
+  <script src="search-data.js" defer></script>
+  <script src="search.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>경기 결과 - ENS Sports Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 헤더 마운트 포인트 -->
+  <div id="app-header"></div>
+  <!-- 헤더 로더 -->
+  <script src="auth.js" defer></script>
+  <script src="header.js" defer></script>
+  <script src="cards-link.js" defer></script>
+  <main>
+    <section class="matches" aria-labelledby="matches-title">
+      <div class="inner">
+        <div class="section-head">
+          <h2 id="matches-title">오늘의 경기 결과 & 하이라이트</h2>
+          <p>공식 기록과 직접 제휴해 실시간으로 업데이트되는 매치 센터.</p>
+        </div>
+
+        <div class="scoreboard">
+          <article class="score-card" aria-label="리그 오브 레전드 경기 결과">
+            <div class="score-meta">
+              <span class="tag">LoL</span>
+              <span>월즈 그룹 스테이지</span>
+              <time datetime="2025-09-20">9월 20일</time>
+            </div>
+            <div class="score-teams">
+              <div class="team"><span class="team-name">T1</span><span class="team-score">2</span></div>
+              <div class="team"><span class="team-name">G2 Esports</span><span class="team-score muted">1</span></div>
+            </div>
+            <a class="button ghost" href="#" aria-disabled="true">하이라이트 준비 중</a>
+          </article>
+
+          <article class="score-card" aria-label="NBA 경기 결과">
+            <div class="score-meta">
+              <span class="tag">NBA</span>
+              <span>정규 시즌</span>
+              <time datetime="2025-09-19">9월 19일</time>
+            </div>
+            <div class="score-teams">
+              <div class="team"><span class="team-name">Warriors</span><span class="team-score">118</span></div>
+              <div class="team"><span class="team-name">Lakers</span><span class="team-score muted">110</span></div>
+            </div>
+            <a class="button ghost" href="https://youtu.be" target="_blank" rel="noopener">하이라이트 보기</a>
+          </article>
+
+          <article class="score-card" aria-label="프리미어리그 경기 결과">
+            <div class="score-meta">
+              <span class="tag">EPL</span>
+              <span>Matchweek 7</span>
+              <time datetime="2025-09-19">9월 19일</time>
+            </div>
+            <div class="score-teams">
+              <div class="team"><span class="team-name">Arsenal</span><span class="team-score">3</span></div>
+              <div class="team"><span class="team-name">Tottenham</span><span class="team-score muted">2</span></div>
+            </div>
+            <a class="button ghost" href="https://youtu.be" target="_blank" rel="noopener">하이라이트 보기</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner"><p>© 2025 ENS Sports Network. 모든 권리 보유.</p></div>
+  </footer>
+
+
+</body>
+</html>

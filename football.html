@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>EPL - ENS Sports Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 헤더 마운트 포인트 -->
+  <div id="app-header"></div>
+  <!-- 헤더 로더 -->
+  <script src="auth.js" defer></script>
+  <script src="header.js" defer></script>
+  <script src="cards-link.js" defer></script>
+  <main>
+    <section class="sport-section" aria-labelledby="football-title">
+      <div class="inner">
+        <div class="section-head">
+          <h2 id="football-title">EPL 히어로</h2>
+          <p>프리미어리그 핵심 선수들을 전용 페이지에서.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=600&q=80" alt="Erling Haaland" />
+            <div class="card-body">
+              <h3>Erling Haaland</h3>
+              <p class="position">ST | Manchester City</p>
+              <p>압도적인 득점 감각.</p>
+              <ul class="stat-list">
+                <li><span>리그</span><span>27골 / 5도움</span></li>
+                <li><span>xG</span><span>0.91/90</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Son Heung-min" />
+            <div class="card-body">
+              <h3>손흥민</h3>
+              <p class="position">LW | Tottenham</p>
+              <p>아시아 최고의 리더이자 골 메이커.</p>
+              <ul class="stat-list">
+                <li><span>리그</span><span>17골 / 10도움</span></li>
+                <li><span>스프린트</span><span>35.1km/h</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80" alt="Bukayo Saka" />
+            <div class="card-body">
+              <h3>Bukayo Saka</h3>
+              <p class="position">RW | Arsenal</p>
+              <p>드리블·침투·세트피스 모두 가능한 멀티 공격수.</p>
+              <ul class="stat-list">
+                <li><span>리그</span><span>16골 / 9도움</span></li>
+                <li><span>xA</span><span>0.34/90</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner"><p>© 2025 ENS Sports Network. 모든 권리 보유.</p></div>
+  </footer>
+
+</body>
+</html>

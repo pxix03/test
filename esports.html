@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>리그 오브 레전드 - ENS Sports Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 헤더 마운트 포인트 -->
+    <div id="app-header"></div>
+    <!-- 헤더 로더 -->
+    <script src="auth.js" defer></script>
+    <script src="header.js" defer></script>
+    <script src="cards-link.js" defer></script>
+  <main>
+    <section class="sport-section" aria-labelledby="esports-title">
+      <div class="inner">
+        <div class="section-head">
+          <h2 id="esports-title">리그 오브 레전드 스타</h2>
+          <p>ENS가 엄선한 LCK·국제 무대의 레전드와 유망주를 전용 페이지에서 더 풍성하게 만나보세요.</p>
+        </div>
+
+        <div class="card-grid">
+          <!-- 기존 index의 LoL 카드 재사용 가능 -->
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1524567492592-b7c8e8547f0c?auto=format&fit=crop&w=600&q=80" alt="Faker" />
+            <div class="card-body">
+              <h3>이상혁 (Faker)</h3>
+              <p class="position">MID | T1</p>
+              <p>월즈 4회 우승, MSI 2회, 2023 롤드컵 MVP.</p>
+              <ul class="stat-list">
+                <li><span>주요 수상</span><span>국제 대회 MVP 5회</span></li>
+                <li><span>솔로랭크</span><span>KR 챌린저 상위권</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1574958269340-3e65554c1bce?auto=format&fit=crop&w=600&q=80" alt="Chovy" />
+            <div class="card-body">
+              <h3>정지훈 (Chovy)</h3>
+              <p class="position">MID | Gen.G</p>
+              <p>라인전 지배력과 섬세한 운영.</p>
+              <ul class="stat-list">
+                <li><span>라인전</span><span>골드 격차 +604 (15분)</span></li>
+                <li><span>챔피언 풀</span><span>아리, 아지르, 요네</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1567593810070-7a3f6811daa1?auto=format&fit=crop&w=600&q=80" alt="Ruler" />
+            <div class="card-body">
+              <h3>박재혁 (Ruler)</h3>
+              <p class="position">ADC | JDG</p>
+              <p>정교한 팀파이트와 캐리 능력.</p>
+              <ul class="stat-list">
+                <li><span>DPM</span><span>683</span></li>
+                <li><span>KDA</span><span>5.9</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner"><p>© 2025 ENS Sports Network. 모든 권리 보유.</p></div>
+  </footer>
+
+
+</body>
+</html>

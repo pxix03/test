@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>회원가입 - ENS Sports Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 헤더 마운트 포인트 -->
+  <div id="app-header"></div>
+  <!-- 헤더 로더 -->
+  <script src="auth.js" defer></script>
+  <script src="header.js" defer></script>
+  <script src="cards-link.js" defer></script>
+
+  <main class="auth-page">
+    <div class="auth-box">
+      <h1>회원가입</h1>
+      <form class="auth-form" id="signupForm">
+        <label for="nickname">닉네임</label>
+        <input type="text" id="nickname" required />
+        <label for="email">이메일</label>
+        <input type="email" id="email" required />
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" required minlength="6" />
+        <button type="submit" class="button primary">회원가입</button>
+      </form>
+      <p class="link">이미 계정이 있으신가요? <a href="login.html">로그인</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner"><p>© 2025 ENS Sports Network. 모든 권리 보유.</p></div>
+  </footer>
+
+
+  <script src="users.js" defer></script>
+  <script src="signup.js" defer></script>
+</body>
+</html>

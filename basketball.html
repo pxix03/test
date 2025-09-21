@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>NBA - ENS Sports Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 헤더 마운트 포인트 -->
+    <div id="app-header"></div>
+    <!-- 헤더 로더 -->
+    <script src="auth.js" defer></script>
+    <script src="header.js" defer></script>
+    <script src="cards-link.js" defer></script>
+  <main>
+    <section class="sport-section" aria-labelledby="basketball-title">
+      <div class="inner">
+        <div class="section-head">
+          <h2 id="basketball-title">NBA 아이콘</h2>
+          <p>하이라이트를 이끄는 슈퍼스타와 유망주들을 한 페이지에서.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1504455580772-0947d74b9c17?auto=format&fit=crop&w=600&q=80" alt="Stephen Curry" />
+            <div class="card-body">
+              <h3>Stephen Curry</h3>
+              <p class="position">PG | Golden State Warriors</p>
+              <p>리그 최고의 3점 슈터.</p>
+              <ul class="stat-list">
+                <li><span>커리어 3점</span><span>3,747개</span></li>
+                <li><span>평균</span><span>26.4점 / 5.1어시</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=600&q=80" alt="Nikola Jokic" />
+            <div class="card-body">
+              <h3>Nikola Jokić</h3>
+              <p class="position">C | Denver Nuggets</p>
+              <p>빅맨 플레이메이커의 정석.</p>
+              <ul class="stat-list">
+                <li><span>평균</span><span>26.7점 / 12.3리바</span></li>
+                <li><span>트리플더블</span><span>커리어 130회</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80" alt="Anthony Edwards" />
+            <div class="card-body">
+              <h3>Anthony Edwards</h3>
+              <p class="position">SG | Minnesota Timberwolves</p>
+              <p>엄청난 폭발력의 차세대 슈팅가드.</p>
+              <ul class="stat-list">
+                <li><span>커리어 하이</span><span>53점</span></li>
+                <li><span>하이라이트</span><span>포스터 덩크</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner"><p>© 2025 ENS Sports Network. 모든 권리 보유.</p></div>
+  </footer>
+
+</body>
+</html>
