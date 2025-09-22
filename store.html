@@ -9,11 +9,13 @@
 <body>
   <!-- 헤더 마운트 포인트 -->
   <div id="app-header"></div>
-  <!-- 헤더 로더 -->
+
+  <!-- 스크립트 (defer로 DOM 후 실행) -->
   <script src="auth.js" defer></script>
   <script src="header.js" defer></script>
   <script src="store.js" defer></script>
   <script src="cards-link.js" defer></script>
+
   <main class="store">
     <div class="inner" id="storeWrapper">
       <div class="section-head">
@@ -21,106 +23,145 @@
         <p>둘러보기는 자유! 로그인하면 장바구니 담기가 가능합니다.</p>
       </div>
 
-      <div class="store-locked" id="storeLocked" hidden role="status">
+      <div class="store-locked" id="storeLocked" hidden role="status" aria-live="polite">
         <p>장바구니 담기는 ENS 계정으로 로그인 후 이용할 수 있습니다.</p>
         <a href="login.html" class="button primary">로그인하고 이용하기</a>
       </div>
 
+      <!-- Esports -->
       <h2>Esports</h2>
-      <div class="store-grid" id="storeGrid">
-        <article class="store-card">
+      <div class="store-grid" id="storeGrid-esports">
+        <article class="store-card"
+                 data-id="t1-worlds-2025-kit"
+                 data-title="T1 월즈 챔피언 한정판 유니폼"
+                 data-price="189000"
+                 data-img="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80">
           <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80" alt="T1 한정판 유니폼" />
           <div class="store-body">
             <h3>T1 월즈 챔피언 한정판 유니폼</h3>
             <p>2025 월즈 기념 에디션. 주문 제작 배번 각인 가능.</p>
             <span class="price">₩189,000</span>
-            <button type="button" class="button secondary">장바구니 추가</button>
+            <button type="button" class="button secondary" aria-label="장바구니에 T1 유니폼 추가">장바구니 추가</button>
           </div>
         </article>
 
-        <article class="store-card">
+        <article class="store-card"
+                 data-id="nba-city-edition-ball"
+                 data-title="NBA 시티 에디션 스킬볼"
+                 data-price="79000"
+                 data-img="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=640&q=80">
           <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=640&q=80" alt="NBA 시티 에디션 볼" />
           <div class="store-body">
             <h3>NBA 시티 에디션 스킬볼</h3>
             <p>정규 규격, 야외 전용 하이브리드 소재. 5개 도시 선택 가능.</p>
             <span class="price">₩79,000</span>
-            <button type="button" class="button secondary">장바구니 추가</button>
+            <button type="button" class="button secondary" aria-label="장바구니에 스킬볼 추가">장바구니 추가</button>
           </div>
         </article>
 
-        <article class="store-card">
+        <article class="store-card"
+                 data-id="epl-big6-scarf"
+                 data-title="EPL 빅6 머플러 컬렉션"
+                 data-price="49000"
+                 data-img="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=640&q=80">
           <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=640&q=80" alt="프리미어리그 머플러" />
           <div class="store-body">
             <h3>EPL 빅6 머플러 컬렉션</h3>
             <p>양면 직조, 정품 라이선스 패치 부착. 팀별 색상 선택.</p>
             <span class="price">₩49,000</span>
-            <button type="button" class="button secondary">장바구니 추가</button>
+            <button type="button" class="button secondary" aria-label="장바구니에 머플러 추가">장바구니 추가</button>
           </div>
         </article>
       </div>
 
+      <!-- 농구 -->
       <h2>농구</h2>
-      <div class="store-grid" id="storeGrid">
-        <article class="store-card">
+      <div class="store-grid" id="storeGrid-basketball">
+        <article class="store-card"
+                 data-id="ens-logitech-bundle"
+                 data-title="ENS X Logitech 게이밍 번들"
+                 data-price="259000"
+                 data-img="https://images.unsplash.com/photo-1586482219171-0f3ac11c0961?auto=format&fit=crop&w=640&q=80">
           <img src="https://images.unsplash.com/photo-1586482219171-0f3ac11c0961?auto=format&fit=crop&w=640&q=80" alt="게이밍 기어" />
           <div class="store-body">
             <h3>ENS X Logitech 게이밍 번들</h3>
             <p>전용 테마 스킨이 적용된 마우스·키보드·헤드셋 패키지.</p>
             <span class="price">₩259,000</span>
-            <button type="button" class="button secondary">장바구니 추가</button>
+            <button type="button" class="button secondary" aria-label="장바구니에 게이밍 번들 추가">장바구니 추가</button>
           </div>
         </article>
 
-        <article class="store-card">
-          <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80" alt="T1 한정판 유니폼" />
-          <div class="store-body">
-            <h3>T1 월즈 챔피언 한정판 유니폼</h3>
-            <p>2025 월즈 기념 에디션. 주문 제작 배번 각인 가능.</p>
-            <span class="price">₩189,000</span>
-            <button type="button" class="button secondary">장바구니 추가</button>
-          </div>
-        </article>
-
-        <article class="store-card">
+        <article class="store-card"
+                 data-id="nba-city-edition-ball-b"
+                 data-title="NBA 시티 에디션 스킬볼"
+                 data-price="79000"
+                 data-img="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=640&q=80">
           <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=640&q=80" alt="NBA 시티 에디션 볼" />
           <div class="store-body">
             <h3>NBA 시티 에디션 스킬볼</h3>
             <p>정규 규격, 야외 전용 하이브리드 소재. 5개 도시 선택 가능.</p>
             <span class="price">₩79,000</span>
-            <button type="button" class="button secondary">장바구니 추가</button>
+            <button type="button" class="button secondary" aria-label="장바구니에 스킬볼 추가">장바구니 추가</button>
+          </div>
+        </article>
+
+        <article class="store-card"
+                 data-id="t1-worlds-2025-kit-fb"
+                 data-title="T1 월즈 챔피언 한정판 유니폼"
+                 data-price="189000"
+                 data-img="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80">
+          <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80" alt="T1 한정판 유니폼" />
+          <div class="store-body">
+            <h3>T1 월즈 챔피언 한정판 유니폼</h3>
+            <p>2025 월즈 기념 에디션. 주문 제작 배번 각인 가능.</p>
+            <span class="price">₩189,000</span>
+            <button type="button" class="button secondary" aria-label="장바구니에 T1 유니폼 추가">장바구니 추가</button>
           </div>
         </article>
       </div>
 
+      <!-- 축구 -->
       <h2>축구</h2>
-      <div class="store-grid" id="storeGrid">
-        <article class="store-card">
+      <div class="store-grid" id="storeGrid-football">
+        <article class="store-card"
+                 data-id="ens-logitech-bundle-fb"
+                 data-title="ENS X Logitech 게이밍 번들"
+                 data-price="259000"
+                 data-img="https://images.unsplash.com/photo-1586482219171-0f3ac11c0961?auto=format&fit=crop&w=640&q=80">
           <img src="https://images.unsplash.com/photo-1586482219171-0f3ac11c0961?auto=format&fit=crop&w=640&q=80" alt="게이밍 기어" />
           <div class="store-body">
             <h3>ENS X Logitech 게이밍 번들</h3>
             <p>전용 테마 스킨이 적용된 마우스·키보드·헤드셋 패키지.</p>
             <span class="price">₩259,000</span>
-            <button type="button" class="button secondary">장바구니 추가</button>
+            <button type="button" class="button secondary" aria-label="장바구니에 게이밍 번들 추가">장바구니 추가</button>
           </div>
         </article>
 
-        <article class="store-card">
+        <article class="store-card"
+                 data-id="t1-worlds-2025-kit-fb"
+                 data-title="T1 월즈 챔피언 한정판 유니폼"
+                 data-price="189000"
+                 data-img="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80">
           <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80" alt="T1 한정판 유니폼" />
           <div class="store-body">
             <h3>T1 월즈 챔피언 한정판 유니폼</h3>
             <p>2025 월즈 기념 에디션. 주문 제작 배번 각인 가능.</p>
             <span class="price">₩189,000</span>
-            <button type="button" class="button secondary">장바구니 추가</button>
+            <button type="button" class="button secondary" aria-label="장바구니에 T1 유니폼 추가">장바구니 추가</button>
           </div>
         </article>
 
-        <article class="store-card">
-          <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=640&q=80" alt="NBA 시티 에디션 볼" />
+        <article class="store-card"
+                 data-id="t1-worlds-2025-kit-fb"
+                 data-title="T1 월즈 챔피언 한정판 유니폼"
+                 data-price="189000"
+                 data-img="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80">
+          <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80" alt="T1 한정판 유니폼" />
           <div class="store-body">
-            <h3>NBA 시티 에디션 스킬볼</h3>
-            <p>정규 규격, 야외 전용 하이브리드 소재. 5개 도시 선택 가능.</p>
-            <span class="price">₩79,000</span>
-            <button type="button" class="button secondary">장바구니 추가</button>
+            <h3>T1 월즈 챔피언 한정판 유니폼</h3>
+            <p>2025 월즈 기념 에디션. 주문 제작 배번 각인 가능.</p>
+            <span class="price">₩189,000</span>
+            <button type="button" class="button secondary" aria-label="장바구니에 T1 유니폼 추가">장바구니 추가</button>
           </div>
         </article>
       </div>
@@ -131,6 +172,5 @@
   <footer class="site-footer">
     <div class="inner"><p>© 2025 ENS Sports Network. 모든 권리 보유.</p></div>
   </footer>
-
 </body>
 </html>
